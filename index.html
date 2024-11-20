@@ -11,141 +11,203 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
-            background-color: #f4f4f4;
+            background-color: #ffffff;
         }
+
+        /* Header Styles */
         header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
+            background-color: #ffffff;
+            padding: 20px;
             text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
         }
+
         header h1 {
             margin: 0;
+            font-size: 2.5em;
         }
-        nav ul {
+
+        header nav ul {
             list-style: none;
             padding: 0;
             text-align: center;
+            margin-top: 15px;
         }
-        nav ul li {
+
+        header nav ul li {
             display: inline;
             margin: 0 15px;
         }
-        nav ul li a {
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .cv-btn {
+            border-radius: 50%;
+            padding: 10px 20px;
+            background-color: #333;
             color: #fff;
             text-decoration: none;
             font-weight: bold;
+            border: none;
+            cursor: pointer;
         }
+
+        /* Profile Section */
+        #profile {
+            text-align: center;
+            margin-top: 80px;
+            padding: 50px 0;
+        }
+
+        #profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        #profile .social-btns {
+            margin-top: 15px;
+        }
+
+        #profile .social-btns a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Section Styles */
         section {
-            padding: 20px;
-            margin: 20px 0;
+            padding: 60px 20px;
+            margin-top: 30px;
         }
+
         section h2 {
             text-align: center;
             margin-bottom: 20px;
         }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-        }
-        .research-item, .publication-item, .work-item {
-            margin-bottom: 20px;
-        }
-        .research-item h3, .publication-item h3, .work-item h3 {
-            margin: 0;
-        }
+
+        /* Footer Styles */
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            padding: 20px 0;
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 </head>
 <body>
+
+    <!-- Header with Navigation -->
     <header>
         <h1>Sana Arastehfar</h1>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#work-experience">Work Experience</a></li>
                 <li><a href="#research">Research</a></li>
                 <li><a href="#publications">Publications</a></li>
-                <li><a href="#work">Work Experience</a></li>
+                <li><a href="#awards">Awards</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="sana_arastehfar_cv.pdf" class="cv-btn" download>CV</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Master of Computer Science at Queen's University, Kingston.</p>
-            <p>Email: <a href="mailto:arastehfar.sana@queensu.ca">arastehfar.sana@queensu.ca</a></p>
+    <!-- Profile Section -->
+    <section id="profile">
+        <img src="Sana.jpg" alt="Sana Arastehfar">
+        <p><strong>Sana Arastehfar</strong><br>Master of Computer Science at Queen's University, Kingston</p>
+        <div class="social-btns">
+            <a href="https://github.com" target="_blank">GitHub</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://google.com" target="_blank">Google</a>
+            <a href="https://youtube.com" target="_blank">YouTube</a>
         </div>
     </section>
 
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div>
+            <h3>Languages</h3>
+            <p>Python, SQL, Matlab, C++, PDDL, RDDL</p>
+        </div>
+        <div>
+            <h3>Frameworks</h3>
+            <p>Scipy, Scikit-Learn, PyTorch, PyTorch Geometric, Numpy, Pandas, AWS SageMaker, Azure ML</p>
+        </div>
+        <div>
+            <h3>Soft Skills</h3>
+            <p>Project management, communication, leadership, collaboration, team work, problem solving, time management</p>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="work-experience">
+        <h2>Work Experience</h2>
+        <div>
+            <h3>Summer Geometry Initiative Research Fellow - MIT (2023 - Present)</h3>
+            <p>Research in applied geometry and geometry processing, supervised by Justin Solomon and others.</p>
+        </div>
+        <div>
+            <h3>Machine Learning Engineer - Hermes Capital Tehran (2020 - 2022)</h3>
+            <p>Developed Machine Learning algorithms for stock market forecasting.</p>
+        </div>
+    </section>
+
+    <!-- Research Section -->
     <section id="research">
-        <div class="container">
-            <h2>Research</h2>
-            <div class="research-item">
-                <h3>Intrinsic Mollification - SGI MIT (2023)</h3>
-                <p>Investigating maintaining triangle quality in geometry processing algorithms without altering mesh connectivity.</p>
-            </div>
-            <div class="research-item">
-                <h3>Tangible NeRFs: Geometry-guided NeRF Exploration - SGI MIT (2023)</h3>
-                <p>Enhancing NeRFs performance through stabilizing the output using geometry and text guidance.</p>
-            </div>
-            <div class="research-item">
-                <h3>Single Agent Behavior Prediction Using Linear Temporal Logic (LTL) in Soccer (2023)</h3>
-                <p>Predicting a single soccer player's behavior by extracting the Linear Temporal Logic (LTL) formula.</p>
-            </div>
-            <div class="research-item">
-                <h3>Visual Representation Learning of Colorectal Cancer in Histology Images Using Contrastive Learning (2022)</h3>
-                <p>Assessing the effects of contrastive loss on medical datasets, specifically in a supervised setting.</p>
-            </div>
-            <div class="research-item">
-                <h3>Smart Meter Data Analysis for Prediction of Residential Energy Consumption (2020-2021)</h3>
-                <p>Proposing a novel deep learning method for estimation and forecasting the consumption loads using smart meter data.</p>
-            </div>
+        <h2>Research</h2>
+        <div>
+            <h3>Intrinsic Mollification - SGI MIT (2023)</h3>
+            <p>Research on geometry processing algorithms.</p>
+        </div>
+        <div>
+            <h3>Tangible NeRFs - SGI MIT (2023)</h3>
+            <p>Exploring Diffusion Models and NeRFs for enhanced performance.</p>
         </div>
     </section>
 
+    <!-- Publications Section -->
     <section id="publications">
-        <div class="container">
-            <h2>Publications</h2>
-            <div class="publication-item">
-                <h3>Arastehfar, S., Muise, C., Pfaff, C. (2023). A Linear Temporal Logic Framework for Single Player Behavior Extraction in Soccer. AAAI, Under review.</h3>
-            </div>
-            <div class="publication-item">
-                <h3>Arastehfar, S., Matinkia, M., Jabbarpour, M. (2022). Short-Term Residential Load Forecasting Using Graph Convolutional Recurrent Neural Network. Elsevier Engineering Application of Artificial Intelligence.</h3>
-            </div>
+        <h2>Publications</h2>
+        <div>
+            <h3>Arastehfar, S., Muise, C., Pfaff, C. (2023). A Linear Temporal Logic Framework for Soccer Behavior Prediction. Under review.</h3>
         </div>
     </section>
 
-    <section id="work">
-        <div class="container">
-            <h2>Work Experience</h2>
-            <div class="work-item">
-                <h3>Summer Geometry Initiative Research Fellow - Massachusetts Institute of Technology (MIT) (2023-Present)</h3>
-                <p>Participated in research projects related to applied geometry and geometry processing under the supervision of Justin Solomon.</p>
-            </div>
-        </div>
+    <!-- Awards Section -->
+    <section id="awards">
+        <h2>Awards & Honors</h2>
+        <ul>
+            <li>Vector Scholarship in AI (2022)</li>
+            <li>UTSPAN Scholarship for pre-CASSIS workshop (2022)</li>
+            <li>Canadian Statistical Science Institution (CANSSSI) sport analysis grant (2022)</li>
+        </ul>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Feel free to reach out via email or connect with me on LinkedIn.</p>
-            <p>Email: <a href="mailto:arastehfar.sana@queensu.ca">arastehfar.sana@queensu.ca</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/sana-arastehfar">linkedin.com/in/sana-arastehfar</a></p>
-        </div>
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:arastehfar.sana@queensu.ca">arastehfar.sana@queensu.ca</a></p>
     </section>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Sana Arastehfar. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
