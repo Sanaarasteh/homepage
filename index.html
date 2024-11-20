@@ -1,202 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sana Arastehfar - Portfolio</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Times New Roman', serif;
-        }
-
-        body {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-
-        nav {
-            display: flex;
-            justify-content: flex-end;
-            gap: 20px;
-            margin-bottom: 50px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: black;
-            text-transform: uppercase;
-            font-size: 14px;
-        }
-
-        .header {
-            display: flex;
-            align-items: center;
-            gap: 50px;
-            margin-bottom: 100px;
-        }
-
-        .profile-img {
-            width: 250px;
-            height: 250px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        .header-content h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
-        }
-
-        .header-content h2 {
-            font-weight: normal;
-            margin-bottom: 5px;
-        }
-
-        section {
-            margin-bottom: 80px;
-        }
-
-        .section-title {
-            font-size: 24px;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            margin-bottom: 30px;
-            border-bottom: 1px solid #000;
-            padding-bottom: 10px;
-        }
-
-        .research-item {
-            margin-bottom: 30px;
-        }
-
-        .research-item h3 {
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-
-        .research-item .year {
-            font-style: italic;
-            margin-bottom: 10px;
-        }
-
-        .research-item p {
-            margin-bottom: 10px;
-            line-height: 1.6;
-        }
-
-        .research-item a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 40px;
-        }
-
-        .skills-category h3 {
-            margin-bottom: 15px;
-        }
-
-        .skills-category p {
-            line-height: 1.6;
-        }
-
-        .awards-list {
-            list-style: none;
-        }
-
-        .awards-list li {
-            margin-bottom: 15px;
-            line-height: 1.6;
-        }
-
-        .awards-list .year {
-            font-style: italic;
-        }
-
-        @media (max-width: 768px) {
-            .header {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sana Arastehfar</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
     <nav>
-        <a href="#skills">Skills</a>
-        <a href="#work">Work Experience</a>
-        <a href="#research">Research</a>
-        <a href="#publication">Publication</a>
-        <a href="#awards">Awards</a>
-        <a href="#" class="cv-button">CV</a>
+      <ul>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#work-experience">Work Experience</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#other">Other</a></li>
+        <li><a href="sana_arastehfar_cv.pdf" class="cv-btn">CV</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <div class="header">
-        <img src="/api/placeholder/250/250" alt="Profile photo" class="profile-img">
-        <div class="header-content">
-            <h1>Sana Arastehfar</h1>
-            <h2>Master of Computer Science</h2>
-            <h3>Queen's University, at Kingston</h3>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <img src="Sana.jpg" alt="Sana Arastehfar">
+        <div class="hero-links">
+          <a href="https://github.com/sanarastehhfar" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/sanarastehhfar" target="_blank">LinkedIn</a>
+          <a href="https://twitter.com/sanarastehhfar" target="_blank">Twitter</a>
         </div>
-    </div>
-
-    <section id="research">
-        <h2 class="section-title">Research</h2>
-        <div class="research-item">
-            <h3>Intrinsic Mollification - SGI MIT</h3>
-            <div class="year">2023</div>
-            <p>This project is conducted under supervision of Keenan Crane, where we investigate maintaining triangle quality in geometry processing algorithms without altering mesh connectivity. <a href="#">GitHub</a></p>
-        </div>
-
-        <div class="research-item">
-            <h3>Tangible NeRFs: Geometry-guided NeRF Exploration - SGI MIT</h3>
-            <div class="year">2023</div>
-            <p>This project is conducted under supervision of Ilke Demir based on recent scene understanding and editing approaches using the combination of Diffusion Models and NeRFs. This project is based on enhancing NeRFs performance through stabilizing the output using geometry and text guidance. <a href="#">GitHub</a></p>
-        </div>
-
-        <!-- Add other research items similarly -->
+      </div>
     </section>
 
     <section id="skills">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-grid">
-            <div class="skills-category">
-                <h3>Languages</h3>
-                <p>Python, SQL, Matlab, C++, PDDL, RDDL</p>
-            </div>
-            <div class="skills-category">
-                <h3>Frameworks</h3>
-                <p>Scipy, Scikit-Learn, PyTorch, PyTorch Geometric, Numpy, Pandas, AWS SageMaker, Azure ML</p>
-            </div>
-            <div class="skills-category">
-                <h3>Soft Skills</h3>
-                <p>Project management, communication, leadership, collaboration, team work, problem solving, time management</p>
-            </div>
-        </div>
+      <!-- Skills section content -->
     </section>
 
-    <section id="awards">
-        <h2 class="section-title">Awards & Honors</h2>
-        <ul class="awards-list">
-            <li>Vector Scholarship In Artificial Intelligence - <span class="year">2022</span></li>
-            <li>UTSPAN Scholarship for pre-CASSIS workshop - <span class="year">2022</span></li>
-            <li>Canadian Statistical Science Institution (CANSSI) sport analysis grant - <span class="year">2022</span></li>
-            <li>Awarded a certificate by the Vice Presidency for Science and Technology for participating in National Laboratory Equipment & Chemical Exhibition - <span class="year">2018</span></li>
-            <li>EMG (Electromyograph) device of Signals Origin is currently online at Universitat Politecnica de Catalunya BarcelonaTech (UPC) in CREB lab - <span class="year">2018</span></li>
-            <li>Design and implementation of Ambulatory Electrocardiography and Electromyography - <span class="year">2014</span></li>
-        </ul>
+    <section id="work-experience">
+      <!-- Work Experience section content -->
     </section>
+
+    <section id="research">
+      <!-- Research section content -->
+    </section>
+
+    <section id="other">
+      <!-- Other section content -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Sana Arastehfar. All rights reserved.</p>
+  </footer>
 </body>
-</html> 
+</html>
