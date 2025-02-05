@@ -1,213 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sana Arastehfar</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #ffffff;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sana Arastehfar</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- (Optional) Link to a font library -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" 
+    rel="stylesheet"
+  />
+  <!-- (Optional) Link to icons (e.g. Font Awesome) -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
 
-        /* Header Styles */
-        header {
-            background-color: #ffffff;
-            padding: 20px;
-            text-align: center;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-
-        header nav ul {
-            list-style: none;
-            padding: 0;
-            text-align: center;
-            margin-top: 15px;
-        }
-
-        header nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-
-        header nav ul li a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-
-        .cv-btn {
-            border-radius: 50%;
-            padding: 10px 20px;
-            background-color: #333;
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            border: none;
-            cursor: pointer;
-        }
-
-        /* Profile Section */
-        #profile {
-            text-align: center;
-            margin-top: 80px;
-            padding: 50px 0;
-        }
-
-        #profile img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-        }
-
-        #profile .social-btns {
-            margin-top: 15px;
-        }
-
-        #profile .social-btns a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #333;
-        }
-
-        /* Section Styles */
-        section {
-            padding: 60px 20px;
-            margin-top: 30px;
-        }
-
-        section h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        /* Footer Styles */
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        /* Smooth Scroll */
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
 </head>
-<body>
+<body id="home">
 
-    <!-- Header with Navigation -->
-    <header>
-        <h1>Sana Arastehfar</h1>
-        <nav>
-            <ul>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#work-experience">Work Experience</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#awards">Awards</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="sana_arastehfar_cv.pdf" class="cv-btn" download>CV</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <!-- Logo or “CV” circle if you want it on the left -->
+      <div class="cv-circle"><a href="sana_arastehfar_cv.pdf" download>CV</a></div>
+      
+    </div>
+    <div class="nav-right">
+      <ul>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#work-experience">Work Experience</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publication</a></li>
+        <li><a href="#awards">Awards</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <!-- Profile Section -->
-    <section id="profile">
-        <img src="Sana.jpg" alt="Sana Arastehfar">
-        <p><strong>Sana Arastehfar</strong><br>Master of Computer Science at Queen's University, Kingston</p>
-        <div class="social-btns">
-            <a href="https://github.com" target="_blank">GitHub</a>
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-            <a href="https://google.com" target="_blank">Google</a>
-            <a href="https://youtube.com" target="_blank">YouTube</a>
+  <!-- ========== HERO / HEADER SECTION ========== -->
+  <header class="hero">
+    <div class="hero-content">
+      <div class="photo-wrapper">
+        <!-- Replace src with your actual photo -->
+        <img
+          src="sana.jpg"
+          alt="Sana Arastehfar"
+          class="profile-pic"
+        />
+        <p class="email">arastehfar.sana@queensu.ca</p>
+        <div class="social-icons">
+            <a href="https://github.com/Sanaarasteh"><i class="fab fa-github"></i></a>
+            <!-- Replace "fa-google-cap" with "fas fa-graduation-cap" since "fa-google-cap" isn't a valid Font Awesome icon -->
+            <a href="https://scholar.google.com/citations?user=tSFdUfIAAAAJ&hl=en"><i class="fas fa-graduation-cap"></i></a>
+            <a href="https://www.linkedin.com/in/sana-arastehfar/"><i class="fab fa-linkedin"></i></a>
         </div>
-    </section>
+          
+      </div>
+      <div class="intro-text">
+        <h1 class="name">Sana Arastehfar</h1>
+        <h2 class="subtitle">Machine Learning Engineer</h2>
+        <p class="university">MS.c. of Computer Science</p>
+        <h3>About Me</h3>
+        <p>
+            I’m an AI and ML specialist with over five years of experience building data-driven solutions in fast-paced startup environments.
+            I’m proficient in Python and well-versed in industry-standard ML/DL libraries (HuggingFace, PyTorch, Scikit-learn, NumPy, and Pandas). 
+            I have hands-on experience in Retrieval-Augmented Generation (RAG), Large Language Models (LLMs), and Computer Vision, alongside cloud 
+            deployments on AWS and Azure. I’m also experienced with Docker, and MLOps pipelines.
+            <br>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <div>
-            <h3>Languages</h3>
-            <p>Python, SQL, Matlab, C++, PDDL, RDDL</p>
-        </div>
-        <div>
-            <h3>Frameworks</h3>
-            <p>Scipy, Scikit-Learn, PyTorch, PyTorch Geometric, Numpy, Pandas, AWS SageMaker, Azure ML</p>
-        </div>
-        <div>
-            <h3>Soft Skills</h3>
-            <p>Project management, communication, leadership, collaboration, team work, problem solving, time management</p>
-        </div>
-    </section>
+            With a solid foundation in statistics, optimization, and probability, I excel at translating complex technical 
+            concepts into clear insights for both technical and non-technical audiences. I thrive in collaborative settings where I can 
+            innovate and drive impactful AI initiatives.
+        </p>
+      </div>
+    </div>
+  </header>
 
-    <!-- Work Experience Section -->
-    <section id="work-experience">
-        <h2>Work Experience</h2>
-        <div>
-            <h3>Summer Geometry Initiative Research Fellow - MIT (2023 - Present)</h3>
-            <p>Research in applied geometry and geometry processing, supervised by Justin Solomon and others.</p>
-        </div>
-        <div>
-            <h3>Machine Learning Engineer - Hermes Capital Tehran (2020 - 2022)</h3>
-            <p>Developed Machine Learning algorithms for stock market forecasting.</p>
-        </div>
-    </section>
+  <!-- ========== SKILLS SECTION ========== -->
+  <section class="skills" id="skills">
+    <h2 class="section-title">SKILLS</h2>
+    <div class="skills-grid">
+      <div class="skill-column">
+        <h3>Languages</h3>
+        <p>Python, SQL, Matlab, C++</p>
 
-    <!-- Research Section -->
-    <section id="research">
-        <h2>Research</h2>
-        <div>
-            <h3>Intrinsic Mollification - SGI MIT (2023)</h3>
-            <p>Research on geometry processing algorithms.</p>
-        </div>
-        <div>
-            <h3>Tangible NeRFs - SGI MIT (2023)</h3>
-            <p>Exploring Diffusion Models and NeRFs for enhanced performance.</p>
-        </div>
-    </section>
+        <h3> </h3>
 
-    <!-- Publications Section -->
-    <section id="publications">
-        <h2>Publications</h2>
-        <div>
-            <h3>Arastehfar, S., Muise, C., Pfaff, C. (2023). A Linear Temporal Logic Framework for Soccer Behavior Prediction. Under review.</h3>
-        </div>
-    </section>
-
-    <!-- Awards Section -->
-    <section id="awards">
-        <h2>Awards & Honors</h2>
+        <h3>Soft Skills</h3>
         <ul>
-            <li>Vector Scholarship in AI (2022)</li>
-            <li>UTSPAN Scholarship for pre-CASSIS workshop (2022)</li>
-            <li>Canadian Statistical Science Institution (CANSSSI) sport analysis grant (2022)</li>
+          <li>Project Ownership</li>
+          <li>Collaboration</li>
+          <li>Innovative Problem Solving</li>
+          <li>Strategic Thinker</li>
         </ul>
-    </section>
+      </div>
+      <div class="skill-column">
+        <h3>Frameworks &amp; Cloud Platform</h3>
+        <p>Scipy, Scikit-Learn, PyTorch, PyTorch Geometric, Numpy, Pandas, AWS SageMaker, Azure ML</p>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:arastehfar.sana@queensu.ca">arastehfar.sana@queensu.ca</a></p>
-    </section>
+        <h3>Version Control</h3>
+        <p>Git, Docker</p>
+      </div>
+      <div class="skill-column">
+        <h3>Data Visualization</h3>
+        <p>Streamlit, Plotly, Power BI</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Sana Arastehfar. All rights reserved.</p>
-    </footer>
+  <!-- ========== WORK EXPERIENCE SECTION ========== -->
+  <section class="work-experience" id="work-experience">
+    <h2 class="section-title">WORK EXPERIENCE</h2>
+
+    <div class="job">
+      <h3>Machine Learning Engineer - University of Alberta, Darkhorse Analytics</h3>
+      <p class="date-range">2024 till present</p>
+      <ul>
+        <li>
+          Mitacs project on the Residential Fire Prediction project under supervision of 
+          Nooshin Salari in collaboration with Darkhorse Analytics. Developing and deploying 
+          machine learning models to predict residential fire risks across Chicago, using 
+          SQL, Python, and PyTorch.
+        </li>
+        <li>
+          Conducted comprehensive time-series analysis and forecasting to identify high-risk areas, 
+          enabling proactive fire prevention strategies and effective resource allocation.
+        </li>
+        <li>
+          Created user-friendly dashboards using Streamlit to facilitate data-driven decision-making.
+        </li>
+        <li>
+          Presented findings and insights to stakeholders, effectively communicating complex 
+          technical concepts to non-technical audiences.
+        </li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Summer Geometry Initiative Research Fellow - MIT</h3>
+      <p class="date-range">2023</p>
+      <ul>
+        <li>
+          Gained research experiences related to applied geometry and geometry processing under 
+          the direction of Justin Solomon. 
+        </li>
+        <li>
+          Participated in projects such as “Tangible NeRFs: Geometry-guided NeRF Exploration” 
+          supervised by Ilke Demir, and “Intrinsic Mollification” under Keenan Crane, etc.
+        </li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Machine Learning Engineer - Hermes Capital Tehran (Startup)</h3>
+      <p class="date-range">2020 till 2022</p>
+      <ul>
+        <li>
+          Developed ML algorithms to forecast the short term return values of the stock in the 
+          Iran stock market using Python and various methods in PyTorch.
+        </li>
+        <li>
+          Presented complex data insights and model outcomes to stakeholders through clear, 
+          compelling presentations.
+        </li>
+        <li>
+          Successfully integrated ML solutions into trading strategies.
+        </li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Co-founder and COO - Zist Abzar Pars Engineers (Signals Origin Startup)</h3>
+      <p class="date-range">2015 till 2020</p>
+      <ul>
+        <li>
+          Production of bio signals recording devices such as Electromyography (EMG), 
+          Electrocardiography (ECG), Ambulatory ECG, SnapECG.
+        </li>
+        <li>
+          Co-founded and managed operations of a biomedical startup specializing in bio signal 
+          recording devices.
+        </li>
+        <li>
+          Oversaw all aspects from product development to market launch, leading a team of 
+          engineers in designing high-quality biomedical devices.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ========== RESEARCH SECTION (placeholder) ========== -->
+  <section class="research" id="research">
+    <h2 class="section-title">RESEARCH</h2>
+
+    <div class="job">
+      <h3>Intrinsic Mollification - SGI MIT</h3>
+      <p class="date-range">2023</p>
+      <ul>
+        <li>
+          This project was conducted under supervision of <a href="https://www.cs.cmu.edu/~kmcrane/">Keenan Crane</a>, 
+          where we investigate maintaining triangle quality in geometry processing algorithms without altering mesh connectivity.
+          <a href="https://github.com/SGI-2023/intrinsic_mollification">GitHub</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Tangible NeRFs: Geometry-guided NeRF Exploration - SGI MIT</h3>
+      <p class="date-range">2023</p>
+      <ul>
+        <li>
+          This project was conducted under supervision of <a href="https://ilkedemir.weebly.com/">Ilke Demir</a> based on recent scene understanding and editing 
+          approaches using the combination of Diffusion Models and NeRFs. This project is based on enhancing NeRFs performance 
+          through stabilizing the output using geometry and text guidance.
+          <a href="https://github.com/SGI-2023/team-tangible">GitHub</a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="job">
+      <h3>Single Agent Behavior Prediction Using Linear Temporal Logic (LTL) in Soccer</h3>
+      <p class="date-range">2023</p>
+      <ul>
+        <li>
+          Master’s thesis in sport analytics under supervision of professors <a href="http://www.haz.ca/">Muise</a> and <a href="https://mast.queensu.ca/~cpfaff/">Pfaff</a>. 
+          The goal of this research is to predict a single soccer player's
+          behavior by extracting the Linear Temporal Logic (LTL) formula. Taking advantage of BayesLTL, a modern tool for extracting LTL formulas in a Bayesian
+          and contrastive framework, we extract a player’s longstanding behavior in different situations (such as before and after losing ball possession, before 
+          and after receiving a goal, and etc.) in the form of interpretable human-readable LTL formulas.
+          <a href="https://github.com/Sanaarasteh/BehaviorPredictionUsingLTL">GitHub</a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="job">
+      <h3>Visual Representation Learning of Colorectal Cancer in Histology Images Using Contrastive Learning</h3>
+      <p class="date-range">2022</p>
+      <ul>
+        <li>
+          Implementation of Simple Contrastive Learning, Self-supervised learning with BYOL and Supervised Contrastive Learning for the first time on CRC100k dataset.
+          The purpose of this work is to assess the effects of contrastive loss on medical datasets, specifically in a supervised setting.
+          <a href="https://github.com/mharmanani/clr-gbc">GitHub</a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="job">
+      <h3>Smart Meter Data Analysis for Prediction of Residential Energy Consumption</h3>
+      <p class="date-range">2020 till 2021</p>
+      <ul>
+        <li>
+          Final project of Bachelor’s degree under the supervision of Professor Mohammadreza Jabbarpour. The goal of the project is to propose a novel deep learning
+           method for estimation and forecasting the consumption loads using smart meter data. Our proposed method consists of employing Graph Neural Network and LSTM 
+           networks to capture both temporal and spatial information.
+          <a href="https://github.com/Sanaarasteh/GCRNNLoadForecasting">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ========== PUBLICATION SECTION (placeholder) ========== -->
+  <section class="publications" id="publications">
+    <h2 class="section-title">PUBLICATIONS</h2>
+    <p>S. Arastehfar, M. Matinkia, M. Jabbarpour, <b><u>Short-Term Residential Load Forecasting Using Graph Convolutional Recurrent Neural Network</u></b>, in Elsevier Engineering Application of Artificial Intelligence, 2022</p>
+  </section>
+
+  <!-- ========== AWARDS SECTION (placeholder) ========== -->
+  <section class="awards" id="awards">
+    <h2 class="section-title">AWARDS</h2>
+    <p>
+      <ul>
+        <li><b>Vector Scholarship In Artificial Intelligence</b> - 2022​ </li>
+        <li><b>UTSPAN Scholarship for pre-CASSIS workshop</b> - 2022</li>
+        <li><b>Canadian Statistical Science Institution (CANSSI) sport analysis grant</b> - 2022</li>
+        <li><b>Awarded a certificate by the Vice Presidency for Science and Technology for participating in National Laboratory Equipment & Chemical Exhibition</b> - 2018​</li>
+        <li><b>EMG (Electromyograph) device of Signals Origin is currently online at Universitat Politecnica de Catalunya BarcelonaTech (UPC) in CREB lab</b> - 2018​</li>
+        <li><b>Design and implementation of Ambulatory Electrocardiography and Electromyography</b>- 2014</li>
+      </ul>
+    </p>
+  </section>
+
+  <!-- ========== AWARDS SECTION (placeholder) ========== -->
+  <section class="awards" id="awards">
+    <h2 class="section-title">Teaching Assistant</h2>
+    <p>
+      <ul>
+        <li><b>Elements of Data Analytics - (Bachelor’s Course)</b> - 2023</li>
+        <li><b>Engineering Mathematics - (Bachelor’s Course)</b> - 2029</li>
+        <li><b>Algorithm Design - (Bachelor’s Course) </b> - 2019</li>
+        <li><b>Computer Architecture - (Bachelor’s Course) </b> - 2019​</li>
+        <li><b>Logic Circuits - (Bachelor’s Course)</b> - 2018​</li>
+      </ul>
+    </p>
+  </section>
 
 </body>
 </html>
